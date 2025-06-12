@@ -20,7 +20,7 @@ Users can add, complete, undo, and delete tasks easily.
 
 ## 📸 Screenshot
 
-![Screenshot](./screenshot.png)
+![alt text](image.png)
 
 ## 💻 Run Locally
 
