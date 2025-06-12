@@ -1,7 +1,7 @@
 .todo {
   &__input {
     margin-bottom: 20px;
-    
+
     form {
       display: flex;
       gap: 10px;
@@ -61,10 +61,21 @@
     background-color: #f0f3f0;
     border-radius: 4px;
 
-    span {
-      flex: 1;
-      margin-right: 10px;
+    &--completed {
+      background-color: #d4edda;
+
+      .todo__content {
+        text-decoration: line-through;
+        color: #6c757d;
+      }
     }
+  }
+
+  &__content {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #212529;
   }
 
   &__btn {
@@ -85,13 +96,23 @@
 
     &--complete {
       color: #28a745;
+
       &:hover {
         color: #2de655;
       }
     }
 
+    &--undo {
+      color: #ffc107;
+
+      &:hover {
+        color: #ffca2c;
+      }
+    }
+
     &--delete {
       color: #8f2c36;
+
       &:hover {
         color: #c82333;
       }
